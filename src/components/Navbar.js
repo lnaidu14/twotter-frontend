@@ -2,6 +2,8 @@ import React from 'react'
 import Contact from "../components/Contact"
 import Posts from "../components/Posts"
 import Home from "../components/Home"
+import Login from "../components/Login"
+import Register from "../components/Register"
 import { Link, BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function Navbar() {
@@ -30,6 +32,12 @@ export default function Navbar() {
                 </Route>
                 <Route path="/posts">
                     <Posts />
+                </Route>
+                <Route path="/login">
+                    <Login />
+                </Route>
+                <Route path="/register">
+                    <Register />
                 </Route>
             </Switch>
             </div>
